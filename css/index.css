@@ -329,7 +329,7 @@ footer .copyright {
 }
 .main-content .features-con {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -338,7 +338,6 @@ footer .copyright {
 .main-content .features-con .sections {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .main-content .features-con .sections .feature-image {
   width: 400px;
