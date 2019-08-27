@@ -337,7 +337,6 @@ footer .copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10em;
 }
 .main-content .features-con .sections .feature-image {
   width: 400px;
@@ -349,9 +348,14 @@ footer .copyright {
   height: auto;
   justify-self: flex-start;
 }
+.main-content .features-con .section1 {
+  margin-top: 5em;
+}
 .main-content .features-con .section2 {
   flex-direction: row-reverse;
+  margin-top: 10em;
 }
 .main-content .features-con .section3 {
+  margin-top: 10em;
   margin-bottom: 10em;
 }
