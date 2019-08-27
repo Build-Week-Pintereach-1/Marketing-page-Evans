@@ -294,7 +294,7 @@ footer .copyright {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 500px;
+  height: 600px;
   padding: 5em;
   border: 1px solid #455;
   background: #455;
@@ -317,16 +317,16 @@ footer .copyright {
 }
 .main-content .head-content .header-text h1 {
   font-size: 3.5rem;
+  font-weight: 600;
 }
 @media (max-width: 500px) {
   .main-content .head-content .header-text h1 {
     font-size: 2.8rem;
-    font-weight: 600;
   }
 }
 .main-content .head-content .header-text p {
   font-size: 1.8rem;
-  margin-top: 1em;
+  margin-top: 1.8em;
 }
 @media (max-width: 500px) {
   .main-content .head-content .header-text p {
@@ -337,10 +337,10 @@ footer .copyright {
 }
 .main-content .head-content .header-text button {
   cursor: pointer;
-  padding: 10px 30px;
+  padding: 0.5em 2em;
   border-radius: 0.5em;
   font-size: 1.8rem;
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 @media (max-width: 500px) {
   .main-content .head-content .header-text button {
@@ -406,10 +406,8 @@ footer .copyright {
     margin-top: 3em;
   }
 }
-@media (max-width: 500px) {
-  .main-content .features-con .sections .feature-text p {
-    font-weight: 500;
-  }
+.main-content .features-con .sections .feature-text p {
+  font-weight: 500;
 }
 .main-content .features-con .section1 {
   margin-top: 5em;
