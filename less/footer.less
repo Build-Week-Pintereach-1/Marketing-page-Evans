@@ -1,0 +1,30 @@
+footer {
+    height: 15vh;
+    font-size: 1.5rem;
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 50%;
+        @media @mobile {
+            flex-direction: column;
+        }
+        .logo {
+            font-size: 2rem;
+        }
+        .footernav ul {
+            display: flex;
+            a {
+                color: black;
+                padding: 1rem;
+            }
+        }
+        .icons {
+            font-size: 3rem;
+        }
+    }
+    .copyright {
+        text-align: center;
+        padding-top: 1rem;
+    }
+}

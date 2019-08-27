@@ -1,0 +1,317 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Cabin', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  border: 1px solid black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  background: black;
+  width: 100%;
+  box-sizing: border-box;
+}
+@media ( max-width: 991px ) {
+  header {
+    padding: 0 20px;
+  }
+}
+header .logo {
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  float: left;
+  font-weight: bold;
+}
+header nav {
+  float: right;
+}
+@media ( max-width: 991px ) {
+  header nav {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    top: 50px;
+    left: -100%;
+    transition: 0.5s;
+  }
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+@media ( max-width: 991px ) {
+  header nav ul {
+    display: block;
+    text-align: center;
+  }
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  height: 50px;
+  font-size: 15px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+@media ( max-width: 991px ) {
+  header nav ul li a {
+    border-bottom: 1px solid black;
+  }
+}
+header nav ul li a:hover {
+  color: red;
+  background: grey;
+}
+header nav.active {
+  left: 0;
+}
+header .menu-toggle {
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  display: none;
+  cursor: pointer;
+}
+@media ( max-width: 991px ) {
+  header .menu-toggle {
+    display: block;
+  }
+}
+footer {
+  height: 15vh;
+  font-size: 1.5rem;
+}
+footer .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 50%;
+}
+@media ( max-width: 991px ) {
+  footer .links {
+    flex-direction: column;
+  }
+}
+footer .links .logo {
+  font-size: 2rem;
+}
+footer .links .footernav ul {
+  display: flex;
+}
+footer .links .footernav ul a {
+  color: black;
+  padding: 1rem;
+}
+footer .links .icons {
+  font-size: 3rem;
+}
+footer .copyright {
+  text-align: center;
+  padding-top: 1rem;
+}
+.main-content {
+  border: 1px solid black;
+  margin-top: 50px;
+}
+.main-content .banner {
+  border: 1px solid black;
+  height: 50vh;
+  display: flex;
+}
+.main-content .banner .text {
+  border: 1px solid black;
+  width: 50%;
+}
+.main-content .banner .text .text-box {
+  border: 1px solid black;
+}
+.main-content .banner .main-image {
+  border: 1px solid black;
+}
+.main-content .features {
+  border: 1px solid black;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+.main-content .features .box-container {
+  border: 1px solid black;
+  width: 80%;
+  height: 100%;
+}
