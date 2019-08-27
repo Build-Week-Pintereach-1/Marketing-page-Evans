@@ -254,8 +254,9 @@ header .menu-toggle {
   }
 }
 footer {
-  height: 15vh;
   font-size: 1.5rem;
+  max-width: 900px;
+  margin: 0px auto;
 }
 footer .links {
   display: flex;
@@ -263,27 +264,38 @@ footer .links {
   justify-content: space-around;
   height: 50%;
 }
-@media max-width: 500px {
+@media (max-width: 500px) {
   footer .links {
     flex-direction: column;
+    padding: 1rem;
   }
 }
 footer .links .logo {
   font-size: 2rem;
 }
-footer .links .footernav ul {
+@media (max-width: 500px) {
+  footer .links .logo {
+    padding-bottom: 10px;
+  }
+}
+footer .links .footer-nav ul {
   display: flex;
 }
-footer .links .footernav ul a {
+footer .links .footer-nav ul a {
   color: black;
   padding: 1rem;
 }
-footer .links .icons {
+footer .links .footer-icons {
   font-size: 3rem;
+}
+@media max-width: 500px {
+  footer .links .footer-icons {
+    padding: 2rem;
+  }
 }
 footer .copyright {
   text-align: center;
-  padding-top: 1rem;
+  padding-bottom: 3rem;
 }
 .main-content {
   border: 1px solid black;
