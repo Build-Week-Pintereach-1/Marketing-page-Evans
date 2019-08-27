@@ -332,17 +332,20 @@ footer .copyright {
   max-width: 900px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
 .main-content .features-con .sections {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .main-content .features-con .sections .feature-image {
   width: 400px;
   height: 250px;
   background: #345;
+}
+.main-content .features-con .sections .feature-text {
+  max-width: 400px;
+  height: auto;
 }
 .main-content .features-con .section2 {
   flex-direction: row-reverse;
