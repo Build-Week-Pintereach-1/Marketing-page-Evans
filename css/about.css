@@ -575,13 +575,29 @@ body {
   font-weight: 500;
   padding-bottom: 0px;
 }
+@media (max-width: 500px) {
+  .team h2 {
+    margin-bottom: 1em;
+  }
+}
 .team .team-group {
   display: flex;
+}
+@media (max-width: 500px) {
+  .team .team-group {
+    flex-direction: column;
+  }
 }
 .team .team-group .team-member {
   width: 170px;
   margin: 4em;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .team .team-group .team-member {
+    width: 200px;
+    margin: 2em;
+  }
 }
 .team .team-group .team-member img {
   width: 80%;
@@ -593,8 +609,16 @@ body {
   font-size: 1.5rem;
   font-weight: 500;
 }
+@media (max-width: 500px) {
+  .team .team-group .team-member p {
+    font-size: 1.8rem;
+  }
+}
 .team .team-group .team-member .p1 {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 2em;
+}
+.team .team-group .team-member .p2 {
+  font-style: italic;
 }

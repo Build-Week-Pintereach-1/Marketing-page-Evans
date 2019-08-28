@@ -1,6 +1,6 @@
 // ABOUT PAGE STYLES
 body {
-    color: #173742;
+  color: #173742;
 }
 .about-us {
   .flex-column-center();
@@ -48,17 +48,30 @@ body {
   h2 {
     .section-h2();
     padding-bottom: 0px;
+
+    @media (@mobile) {
+      margin-bottom: 1em;
+    }
   }
 
   .team-group {
     display: flex;
+    @media (@mobile) {
+      flex-direction: column;
+    }
+
     .team-member {
       width: 170px;
       margin: 4em;
       text-align: center;
 
+      @media (@mobile) {
+        width: 200px;
+        margin: 2em;
+      }
+
       img {
-          width: 80%;
+        width: 80%;
       }
 
       p {
@@ -66,14 +79,21 @@ body {
         font-family: "Montserrat", sans-serif;
         letter-spacing: 0.05em;
         font-size: 1.5rem;
-          font-weight: 500;
+        font-weight: 500;
 
+        @media (@mobile) {
+          font-size: 1.8rem;
+        }
       }
       .p1 {
-          font-weight: 700;
-          text-transform: uppercase;
-          margin-top: 2em;
-        }
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 2em;
+      }
+
+      .p2 {
+        font-style: italic;
+      }
     }
   }
 }
