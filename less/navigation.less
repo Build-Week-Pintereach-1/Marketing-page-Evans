@@ -1,23 +1,38 @@
 header {
-    margin: 0 auto;
-    display: flex;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-    img {
-        width: 220px;
-        height: auto;
-    }
+  img {
+    width: 220px;
+    height: auto;
+  }
 
-    nav {
+  nav {
+    ul {
+      li {
+        list-style: none;
+        display: inline;
+        margin-left: 5em;
+        a {
+          font-size: 1.8rem;
+          color: rgb(40, 40, 40);
+          text-decoration: none;
+          letter-spacing: 0.08em;
+          border-radius: 0.2em;
+          font-weight: 600;
 
-        ul {
-
-            li {
-
-                a {
-
-                    
-                }
-            }
         }
+      }
+      .register {
+        a {
+            padding: 0.8em 1.8em;
+          border: 2px solid rgb(255, 99, 71);
+          color: rgb(255, 99, 71);
+          font-weight: 600;
+        }
+      }
     }
+  }
 }

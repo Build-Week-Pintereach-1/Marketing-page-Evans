@@ -171,10 +171,31 @@ img {
 header {
   margin: 0 auto;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 header img {
   width: 220px;
   height: auto;
+}
+header nav ul li {
+  list-style: none;
+  display: inline;
+  margin-left: 5em;
+}
+header nav ul li a {
+  font-size: 1.8rem;
+  color: #282828;
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  border-radius: 0.2em;
+  font-weight: 600;
+}
+header nav ul .register a {
+  padding: 0.8em 1.8em;
+  border: 2px solid #ff6347;
+  color: #ff6347;
+  font-weight: 600;
 }
 footer {
   margin: 0 auto;
@@ -238,7 +259,6 @@ footer .copyright .footer-copy {
 }
 .main-content {
   border: 1px solid black;
-  margin-top: 5em;
   font-size: 1rem;
 }
 .main-content .head-content {
@@ -291,10 +311,11 @@ footer .copyright .footer-copy {
 }
 .main-content .head-content .header-text a button {
   cursor: pointer;
+  font-family: 'Manjari', sans-serif;
   margin-top: 1.5em;
   background: #ff6347;
   color: #ffffff;
-  padding: 0.5em 1.6em;
+  padding: 0.5em 1.5em;
   font-size: 1.8rem;
   border-radius: 0.5em;
   border: 2px solid #ff6347;
