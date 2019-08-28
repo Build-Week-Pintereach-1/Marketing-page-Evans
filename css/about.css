@@ -8,6 +8,10 @@
   justify-content: center;
   align-items: center;
 }
+.max-width-margin-auto {
+  margin: 0 auto;
+  max-width: 900px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -490,20 +494,22 @@ footer .copyright .footer-copy {
     margin-bottom: 5em;
   }
 }
-.about-body {
-  margin: 0 auto;
-  max-width: 900px;
-}
 .about-us {
-  width: 100px;
-  height: 100px;
-  background: #bc12d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  background: #222;
 }
 .our-story {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  max-width: 900px;
 }
 .our-story h2 {
   text-transform: uppercase;
@@ -522,6 +528,8 @@ footer .copyright .footer-copy {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  max-width: 900px;
 }
 .team h2 {
   text-transform: uppercase;
