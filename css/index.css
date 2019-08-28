@@ -176,10 +176,44 @@ header {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   border-bottom: 0.2em solid rgba(255, 99, 71, 0.7);
+  position: relative;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+header .ham-icon {
+  width: 28px;
+  margin-right: 3em;
 }
 header img {
   width: 220px;
   height: auto;
+}
+@media (max-width: 500px) {
+  header img {
+    width: 150px;
+    margin-left: 3em;
+  }
+}
+@media (max-width: 500px) {
+  header nav {
+    display: inherit;
+    position: absolute;
+    flex-direction: column;
+    background: #344;
+    width: 100vh;
+    height: 100vh;
+    margin-top: 20em;
+    margin-left: 5em;
+  }
+}
+@media (max-width: 500px) {
+  header nav ul {
+    padding-top: 3em;
+  }
 }
 header nav ul li {
   list-style: none;
@@ -192,6 +226,11 @@ header nav ul li a {
   text-decoration: none;
   letter-spacing: 0.08em;
   font-weight: 500;
+}
+@media (max-width: 500px) {
+  header nav ul li a {
+    color: white;
+  }
 }
 header nav ul li a:hover {
   color: #ff6347;
