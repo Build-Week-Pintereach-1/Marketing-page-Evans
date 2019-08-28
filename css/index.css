@@ -189,7 +189,7 @@ header {
   align-items: center;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-  border-bottom: 0.2em solid rgba(255, 99, 71, 0.7);
+  border-bottom: 0.2em solid rgba(23, 55, 66, 0.5);
   position: relative;
 }
 @media (max-width: 500px) {
@@ -392,6 +392,7 @@ footer .copyright .footer-copy {
   margin-right: 5em;
   color: #173742;
   letter-spacing: 0.08em;
+  font-family: 'Montserrat', sans-serif;
 }
 @media (max-width: 500px) {
   .main-content .head-content .header-text {
@@ -404,8 +405,8 @@ footer .copyright .footer-copy {
   }
 }
 .main-content .head-content .header-text h1 {
-  font-size: 4rem;
-  font-weight: 800;
+  font-size: 3.8rem;
+  font-weight: bolder;
 }
 @media (max-width: 500px) {
   .main-content .head-content .header-text h1 {
@@ -415,7 +416,6 @@ footer .copyright .footer-copy {
 .main-content .head-content .header-text p {
   font-size: 1.6rem;
   margin-top: 1.8em;
-  font-family: 'Montserrat', sans-serif;
   line-height: 1.8em;
   font-weight: 600;
 }

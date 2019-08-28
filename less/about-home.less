@@ -1,5 +1,7 @@
 // ABOUT PAGE STYLES
-
+body {
+    color: #173742;
+}
 .about-us {
   .flex-column-center();
   height: 200px;
@@ -20,17 +22,21 @@
   h2 {
     .section-h2();
     padding-bottom: 0px;
-    margin-top: 4em;
+    margin-top: 3em;
   }
 
   .about-content {
-    background: FFF4FC;
+    background: rgba(207, 226, 237, 0.1);
     width: 650px;
     padding: 5em;
     border-radius: 1em;
     margin-top: 4em;
     margin-bottom: 4em;
-    border: 0.15em solid rgba(255, 99, 71, 1);
+    border: 0.1em solid rgb(207, 226, 237);
+    line-height: 1.8em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: medium;
+    font-size: 0.6rem;
   }
 }
 
@@ -47,12 +53,27 @@
   .team-group {
     display: flex;
     .team-member {
-      width: 100px;
+      width: 170px;
       margin: 4em;
+      text-align: center;
+
+      img {
+          width: 80%;
+      }
 
       p {
         text-align: center;
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 0.05em;
+        font-size: 1.5rem;
+          font-weight: 500;
+
       }
+      .p1 {
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-top: 2em;
+        }
     }
   }
 }
