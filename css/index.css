@@ -323,10 +323,24 @@ footer .links .footer-logo-nav .footer-nav ul li a {
 footer .links .footer-logo-nav .footer-nav ul li a:hover {
   color: #173742;
 }
+@media (max-width: 500px) {
+  footer .links .footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 footer .links .footer-icons a {
   text-decoration: none;
 }
+@media (max-width: 500px) {
+  footer .links .footer-icons a {
+    margin-top: 1.8em;
+  }
+}
 footer .links .footer-icons a .f-icons {
+  font-size: 1.8rem;
+  margin: 0.4em;
   color: #646464;
 }
 @media (max-width: 500px) {

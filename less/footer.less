@@ -65,11 +65,23 @@ footer {
     }
 
     .footer-icons {
-      
-            a {
+
+      @media (@mobile) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a {
         text-decoration: none;
+
+        @media (@mobile) {
+        margin-top: 1.8em;
+        }
+
         .f-icons {
-          // margin: 0.5em;
+          font-size: 1.8rem;
+          margin: 0.4em;
           color: rgb(100, 100, 100);
 
           @media (@mobile) {
