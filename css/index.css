@@ -313,14 +313,14 @@ footer .copyright .footer-copy {
   cursor: pointer;
   font-family: 'Manjari', sans-serif;
   margin-top: 1.5em;
-  background: #ff6347;
-  color: #ffffff;
+  background: #ffffff;
   padding: 0.5em 1.5em;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   border-radius: 0.5em;
-  border: 2px solid #ff6347;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 0.08em;
+  border: 0.15rem solid #ff6347;
+  color: #ff6347;
 }
 .main-content .head-content .hero {
   max-width: 400px;
