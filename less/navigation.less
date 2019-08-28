@@ -15,6 +15,10 @@ header {
 
   .ham {
     display: none;
+
+    @media (@mobile) {
+display: unset;
+    }
     .ham-icon {
       @media (@mobile) {
         width: 28px;
@@ -35,18 +39,11 @@ header {
 
   nav {
     @media (@mobile) {
-      display: inherit;
-      position: absolute;
-      flex-direction: column;
-      background: #344;
-      width: 100vh;
-      height: 100vh;
-      margin-top: 20em;
-      margin-left: 5em;
+      display: none;
     }
     ul {
       @media (@mobile) {
-        padding-top: 3em;
+        
       }
       li {
         list-style: none;

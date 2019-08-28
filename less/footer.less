@@ -66,25 +66,28 @@ footer {
 
     .footer-icons {
       font-size: 1.8rem;
-      margin-top: 0.3em;
+      margin: 0.3em;
 
       @media (@mobile) {
         margin-top: 1.5em;
         text-align: center;
       }
 
-      .f-icons {
-        margin-left: 0.5em;
-        color: rgb(100, 100, 100);
+      a {
+        list-style: none;
+        .f-icons {
+          // margin: 0.5em;
+          color: rgb(100, 100, 100);
 
-        @media (@mobile) {
-          margin-left: 0px;
-          margin: 0.8em;
-          margin-bottom: 0px;
-        }
+          @media (@mobile) {
+            margin-left: 0px;
+            margin: 0.8em;
+            margin-bottom: 0px;
+          }
 
-        &:hover {
-          color: rgb(23, 55, 66);
+          &:hover {
+            color: rgb(23, 55, 66);
+          }
         }
       }
     }
