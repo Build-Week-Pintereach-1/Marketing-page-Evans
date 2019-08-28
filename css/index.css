@@ -490,7 +490,10 @@ footer .copyright .footer-copy {
   }
 }
 .main-content .features-con .sections .feature-text p {
-  font-weight: 500;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.8em;
+  margin-top: 0.8em;
 }
 .main-content .features-con .section1 {
   margin-top: 5em;
