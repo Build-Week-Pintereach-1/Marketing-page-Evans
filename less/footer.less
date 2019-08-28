@@ -3,24 +3,39 @@ footer {
   max-width: 900px;
   display: flex;
   flex-direction: column;
-  margin-top: 3em;
+  margin-top: 5em;
+
+  @media (@mobile) {
+    margin-top: 5em;
+  }
 
   .links {
     display: flex;
     justify-content: space-around;
+
+    @media (@mobile) {
+      flex-direction: column;
+    }
 
     .footer-logo-nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
 
-      .footer-logo-con {
+      @media (@mobile) {
+        flex-direction: column;
+      }
 
+      .footer-logo-con {
         width: 125px;
       }
 
       .footer-nav {
         padding-top: 0.15em;
+
+        @media (@mobile) {
+          margin-top: 3em;
+        }
         ul {
           li {
             list-style: none;
@@ -35,6 +50,11 @@ footer {
               letter-spacing: 0.08em;
               cursor: pointer;
 
+              @media (@mobile) {
+                margin-left: 0px;
+                margin: 1.5em;
+              }
+
               &:hover {
                 color: rgb(255, 99, 71);
               }
@@ -48,13 +68,24 @@ footer {
       font-size: 1.8rem;
       margin-top: 0.3em;
 
+      @media (@mobile) {
+        margin-top: 1.5em;
+        text-align: center;
+      }
+
       .f-icons {
         margin-left: 0.5em;
         color: rgb(100, 100, 100);
 
+        @media (@mobile) {
+          margin-left: 0px;
+          margin: 0.8em;
+          margin-bottom: 0px;
+        }
+
         &:hover {
-                color: rgb(59, 59, 59);
-              }
+          color: rgb(59, 59, 59);
+        }
       }
     }
   }
@@ -64,6 +95,10 @@ footer {
     margin-top: 2em;
     margin-bottom: 2.5em;
     color: rgb(100, 100, 100);
+
+    @media (@mobile) {
+      margin-top: 4.5em;
+    }
 
     .footer-copy {
       font-weight: 600;

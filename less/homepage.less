@@ -82,6 +82,7 @@
     max-width: 900px;
     display: flex;
     flex-direction: column;
+    border-bottom: 0.06em solid rgba(100, 27, 27, 0.5);
 
     .sections {
       display: flex;
@@ -90,11 +91,16 @@
 
       @media (@mobile) {
         flex-direction: column;
+        margin-top: 8em;
       }
 
       .feature-image {
         width: 300px;
-        height: 250px;
+        height: auto;
+
+        @media (@mobile) {
+          width: 250px;
+        }
       }
 
       .feature-text {
@@ -105,7 +111,7 @@
 
         @media (@mobile) {
           text-align: center;
-          margin-top: 3em;
+          margin-top: 5em;
         }
 
         p {
@@ -124,7 +130,6 @@
 
       @media (@mobile) {
         flex-direction: column;
-        margin-top: 5em;
       }
     }
 
@@ -133,7 +138,6 @@
       margin-bottom: 10em;
 
       @media (@mobile) {
-        margin-top: 5em;
         margin-bottom: 5em;
       }
     }
