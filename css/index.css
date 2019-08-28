@@ -173,6 +173,9 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  border-bottom: 1.5px solid rgba(255, 99, 71, 0.8);
 }
 header img {
   width: 220px;
@@ -188,14 +191,16 @@ header nav ul li a {
   color: #282828;
   text-decoration: none;
   letter-spacing: 0.08em;
-  border-radius: 0.2em;
-  font-weight: 600;
+  font-weight: 500;
+}
+header nav ul li a:hover {
+  color: #ff6347;
 }
 header nav ul .register a {
-  padding: 0.8em 1.8em;
+  padding: 0.6em 1.8em;
   border: 2px solid #ff6347;
-  color: #ff6347;
-  font-weight: 600;
+  background: #ff6347;
+  color: #ffffff;
 }
 footer {
   margin: 0 auto;
@@ -258,7 +263,6 @@ footer .copyright .footer-copy {
   font-size: 1.25rem;
 }
 .main-content {
-  border: 1px solid black;
   font-size: 1rem;
 }
 .main-content .head-content {
@@ -267,7 +271,6 @@ footer .copyright .footer-copy {
   align-items: center;
   height: 600px;
   padding: 5em;
-  border: 1px solid #455;
 }
 @media (max-width: 500px) {
   .main-content .head-content {
@@ -314,12 +317,11 @@ footer .copyright .footer-copy {
   font-family: 'Manjari', sans-serif;
   margin-top: 1.5em;
   background: #ffffff;
-  padding: 0.5em 1.5em;
+  padding: 0.7em 1.5em;
   font-size: 1.6rem;
-  border-radius: 0.5em;
   font-weight: 500;
   letter-spacing: 0.08em;
-  border: 0.15rem solid #ff6347;
+  border: 0.14rem solid #ff6347;
   color: #ff6347;
 }
 .main-content .head-content .hero {

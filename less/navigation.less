@@ -3,6 +3,9 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  border-bottom: 1.5px solid rgba(255, 99, 71, 0.8);
 
   img {
     width: 220px;
@@ -20,17 +23,19 @@ header {
           color: rgb(40, 40, 40);
           text-decoration: none;
           letter-spacing: 0.08em;
-          border-radius: 0.2em;
-          font-weight: 600;
+          font-weight: 500;
 
+          &:hover {
+              color: rgb(255, 99, 71);
+          }
         }
       }
       .register {
         a {
-            padding: 0.8em 1.8em;
+            padding: 0.6em 1.8em;
           border: 2px solid rgb(255, 99, 71);
-          color: rgb(255, 99, 71);
-          font-weight: 600;
+          background: rgb(255, 99, 71);;
+          color: rgb(255, 255, 255);
         }
       }
     }
