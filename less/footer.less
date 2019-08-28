@@ -4,20 +4,25 @@ footer {
   display: flex;
   flex-direction: column;
   margin-top: 3em;
+  
 
   .links {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    // border-top: 1px solid rgb(100, 100, 100);
 
     .footer-logo-nav {
       display: flex;
       justify-content: space-between;
+      align-items: center;
 
       .footer-logo {
-          font-size: 2.5rem;
+        width: 150px;
+        height: auto;
       }
 
       .footer-nav {
+        padding-top: 0.4em;
         ul {
           li {
             list-style: none;
@@ -25,10 +30,12 @@ footer {
 
             a {
               text-decoration: none;
-              color: #222;
-              padding-left: 3em;
+              color: rgb(100, 100, 100);
+              margin-left: 3em;
               font-size: 1.4rem;
-              font-weight: 500;
+              font-weight: 600;
+              letter-spacing: 0.08em;
+              cursor: pointer;
             }
           }
         }
@@ -36,7 +43,13 @@ footer {
     }
 
     .footer-icons {
-        font-size: 1.8rem;
+      font-size: 1.8rem;
+      margin-top: 0.5em;
+
+      .f-icons {
+        margin-left: 0.5em;
+        color: rgb(100, 100, 100);
+      }
     }
   }
 
@@ -44,7 +57,12 @@ footer {
     text-align: center;
     margin-top: 2em;
     margin-bottom: 2.5em;
-    font-size: 1.4rem;
-    font-weight: 600;
+    color: rgb(100, 100, 100);
+
+    .footer-copy {
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      font-size: 1.25rem;
+    }
   }
 }
