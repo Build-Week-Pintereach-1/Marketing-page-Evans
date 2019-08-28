@@ -2,8 +2,15 @@
 
 .about-us {
   .flex-column-center();
-  .section-h2();
+  height: 200px;
+  padding: 5em;
   background: #222;
+
+  h2 {
+    .section-h2();
+    padding-bottom: 0px;
+    color: #fff;
+  }
 }
 
 .our-story {
@@ -12,24 +19,29 @@
 
   h2 {
     .section-h2();
+    padding-bottom: 0px;
+    margin-top: 4em;
   }
 
   .about-content {
-    background: rgb(212, 212, 212);
+    background: rgba(255, 99, 71, 0.05);
     width: 650px;
     padding: 5em;
     border-radius: 1em;
     margin-top: 4em;
     margin-bottom: 4em;
+    border: 0.15em solid rgba(255, 99, 71, 1);
   }
 }
 
 .team {
   .flex-column-center();
   .max-width-margin-auto();
+  margin-top: 3em;
 
   h2 {
     .section-h2();
+    padding-bottom: 0px;
   }
 
   .team-group {

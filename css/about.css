@@ -198,9 +198,11 @@ header {
     justify-content: space-between;
   }
 }
-header .ham-icon {
-  width: 28px;
-  margin-right: 3em;
+@media (max-width: 500px) {
+  header .ham .ham-icon {
+    width: 28px;
+    margin-right: 3em;
+  }
 }
 header img {
   width: 220px;
@@ -499,9 +501,15 @@ footer .copyright .footer-copy {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 200px;
+  padding: 5em;
+  background: #222;
+}
+.about-us h2 {
   text-transform: uppercase;
   font-weight: 500;
-  background: #222;
+  padding-bottom: 0px;
+  color: #fff;
 }
 .our-story {
   display: flex;
@@ -514,14 +522,17 @@ footer .copyright .footer-copy {
 .our-story h2 {
   text-transform: uppercase;
   font-weight: 500;
+  padding-bottom: 0px;
+  margin-top: 4em;
 }
 .our-story .about-content {
-  background: #d4d4d4;
+  background: rgba(255, 99, 71, 0.05);
   width: 650px;
   padding: 5em;
   border-radius: 1em;
   margin-top: 4em;
   margin-bottom: 4em;
+  border: 0.15em solid #ff6347;
 }
 .team {
   display: flex;
@@ -530,10 +541,12 @@ footer .copyright .footer-copy {
   align-items: center;
   margin: 0 auto;
   max-width: 900px;
+  margin-top: 3em;
 }
 .team h2 {
   text-transform: uppercase;
   font-weight: 500;
+  padding-bottom: 0px;
 }
 .team .team-group {
   display: flex;

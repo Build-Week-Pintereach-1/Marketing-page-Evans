@@ -13,9 +13,13 @@ header {
     justify-content: space-between;
   }
 
-  .ham-icon {
-    width: 28px;
-    margin-right: 3em;
+  .ham {
+    .ham-icon {
+      @media (@mobile) {
+        width: 28px;
+        margin-right: 3em;
+      }
+    }
   }
 
   img {
