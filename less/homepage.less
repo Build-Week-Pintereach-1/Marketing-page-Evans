@@ -21,12 +21,15 @@
     .header-text {
       max-width: 400px;
       margin-left: 10em;
+      margin-right: 5em;
 
       @media (@mobile) {
         width: 350px;
         height: auto;
         justify-content: center;
         text-align: center;
+        margin-right: 0px;
+        margin-left: 0px;
       }
 
       h1 {
@@ -67,7 +70,13 @@
     }
 
     .hero {
-        
+      max-width: 400px;
+      margin-right: 10em;
+      margin-left: 5em;
+
+      @media (@mobile) {
+        display: none;
+      }
     }
   }
 

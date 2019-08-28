@@ -257,6 +257,7 @@ footer .copyright .footer-copy {
 .main-content .head-content .header-text {
   max-width: 400px;
   margin-left: 10em;
+  margin-right: 5em;
 }
 @media (max-width: 500px) {
   .main-content .head-content .header-text {
@@ -264,6 +265,8 @@ footer .copyright .footer-copy {
     height: auto;
     justify-content: center;
     text-align: center;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 }
 .main-content .head-content .header-text h1 {
@@ -297,6 +300,16 @@ footer .copyright .footer-copy {
   border: 2px solid #ff6347;
   font-weight: 300;
   letter-spacing: 0.08em;
+}
+.main-content .head-content .hero {
+  max-width: 400px;
+  margin-right: 10em;
+  margin-left: 5em;
+}
+@media (max-width: 500px) {
+  .main-content .head-content .hero {
+    display: none;
+  }
 }
 .main-content .features-con {
   margin: 0 auto;
