@@ -1,8 +1,40 @@
 // ABOUT PAGE STYLES
 
-.about-test {
+.about-body {
+  margin: 0 auto;
+  max-width: 900px;
+}
+.about-us {
   width: 100px;
   height: 100px;
   background: rgb(188, 18, 211);
 }
 
+.our-story {
+  .flex-column-center();
+
+  h2 {
+    .section-h2();
+  }
+}
+
+.team {
+  .flex-column-center();
+
+  h2 {
+    .section-h2();
+  }
+
+  .team-group {
+    display: flex;
+
+    .team-member {
+      width: 100px;
+      margin: 4em;
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+}

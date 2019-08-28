@@ -1,3 +1,13 @@
+.section-h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -345,8 +355,177 @@ footer .copyright .footer-copy {
   letter-spacing: 0.08em;
   font-size: 1.25rem;
 }
-.about-test {
+.main-content {
+  font-size: 1rem;
+}
+.main-content .head-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 600px;
+  padding: 5em;
+}
+@media (max-width: 500px) {
+  .main-content .head-content {
+    height: 400px;
+  }
+}
+.main-content .head-content .header-text {
+  max-width: 400px;
+  margin-left: 10em;
+  margin-right: 5em;
+}
+@media (max-width: 500px) {
+  .main-content .head-content .header-text {
+    width: 350px;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+.main-content .head-content .header-text h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+@media (max-width: 500px) {
+  .main-content .head-content .header-text h1 {
+    font-size: 2.8rem;
+  }
+}
+.main-content .head-content .header-text p {
+  font-size: 1.8rem;
+  margin-top: 1.8em;
+}
+@media (max-width: 500px) {
+  .main-content .head-content .header-text p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 2em;
+  }
+}
+.main-content .head-content .header-text a button {
+  cursor: pointer;
+  font-family: 'Manjari', sans-serif;
+  margin-top: 1.5em;
+  background: #ffffff;
+  padding: 0.7em 1.5em;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  border: 0.14rem solid #ff6347;
+  color: #ff6347;
+}
+.main-content .head-content .hero {
+  max-width: 400px;
+  margin-right: 10em;
+  margin-left: 5em;
+}
+@media (max-width: 500px) {
+  .main-content .head-content .hero {
+    display: none;
+  }
+}
+.main-content .features-con {
+  margin: 0 auto;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.06em solid rgba(100, 27, 27, 0.5);
+}
+.main-content .features-con .sections {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .main-content .features-con .sections {
+    flex-direction: column;
+    margin-top: 8em;
+  }
+}
+.main-content .features-con .sections .feature-image {
+  width: 300px;
+  height: auto;
+}
+@media (max-width: 500px) {
+  .main-content .features-con .sections .feature-image {
+    width: 250px;
+  }
+}
+.main-content .features-con .sections .feature-text {
+  width: 300px;
+  height: auto;
+  justify-self: flex-start;
+  font-weight: 600;
+}
+@media (max-width: 500px) {
+  .main-content .features-con .sections .feature-text {
+    text-align: center;
+    margin-top: 5em;
+  }
+}
+.main-content .features-con .sections .feature-text p {
+  font-weight: 500;
+}
+.main-content .features-con .section1 {
+  margin-top: 5em;
+}
+.main-content .features-con .section2 {
+  flex-direction: row-reverse;
+  margin-top: 10em;
+}
+@media (max-width: 500px) {
+  .main-content .features-con .section2 {
+    flex-direction: column;
+  }
+}
+.main-content .features-con .section3 {
+  margin-top: 10em;
+  margin-bottom: 10em;
+}
+@media (max-width: 500px) {
+  .main-content .features-con .section3 {
+    margin-bottom: 5em;
+  }
+}
+.about-body {
+  margin: 0 auto;
+  max-width: 900px;
+}
+.about-us {
   width: 100px;
   height: 100px;
   background: #bc12d3;
+}
+.our-story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.our-story h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.team .team-group {
+  display: flex;
+}
+.team .team-group .team-member {
+  width: 100px;
+  margin: 4em;
+}
+.team .team-group .team-member p {
+  text-align: center;
 }
