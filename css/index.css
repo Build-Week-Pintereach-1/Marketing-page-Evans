@@ -193,13 +193,24 @@ header {
 }
 @media (max-width: 500px) {
   header {
-    flex-direction: row;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #eef8fb;
+    position: fixed;
+    border-bottom: unset;
+  }
+}
+@media (max-width: 500px) {
+  header .left-nav {
+    position: relative;
+    display: flex;
+    width: 100%;
     justify-content: space-between;
+    align-items: center;
   }
 }
 header .ham {
   display: none;
-  position: relative;
 }
 @media (max-width: 500px) {
   header .ham {
@@ -224,35 +235,18 @@ header img {
 }
 @media (max-width: 500px) {
   header nav {
-    position: absolute;
-    margin-top: 17.5em;
+    border-top: 0.2em solid rgba(23, 55, 66, 0.5);
     width: 100vw;
     height: 100vh;
-  }
-}
-header nav a .close-icon {
-  display: none;
-}
-@media (max-width: 500px) {
-  header nav a .close-icon {
-    width: 24px;
-    color: #fff;
-    height: auto;
-    position: absolute;
-    display: unset;
-    right: 0;
-    margin-top: -4.5em;
-    margin-right: 3.5em;
+    margin-top: 1.5em;
+    margin-bottom: 5em;
   }
 }
 @media (max-width: 500px) {
   header nav ul {
     display: flex;
     flex-direction: column;
-    background: #eef8fb;
-    text-align: center;
-    padding-bottom: 10em;
-    padding-top: 3em;
+    align-items: center;
   }
 }
 header nav ul li {
@@ -262,8 +256,8 @@ header nav ul li {
 }
 @media (max-width: 500px) {
   header nav ul li {
-    margin-top: 7em;
     margin-left: 0px;
+    margin-top: 5em;
   }
 }
 header nav ul li a {

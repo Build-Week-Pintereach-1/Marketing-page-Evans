@@ -6,16 +6,27 @@ header {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   border-bottom: 0.2em solid rgba(23, 55, 66, 0.5);
-  // position: fixed;
 
   @media (@mobile) {
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #eef8fb;
+    position: fixed;
+    border-bottom: unset;
+  }
+
+  .left-nav {
+    @media (@mobile) {
+      position: relative;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   .ham {
     display: none;
-    position: relative;
 
     @media (@mobile) {
       display: unset;
@@ -41,37 +52,35 @@ header {
   nav {
     @media (@mobile) {
       // display: none;
-      position: absolute;
-      margin-top: 17.5em;
+      border-top: 0.2em solid rgba(23, 55, 66, 0.5);
       width: 100vw;
       height: 100vh;
+      margin-top: 1.5em;
+      margin-bottom: 5em;
     }
 
-    a {
-      .close-icon {
-        display: none;
+    // a {
+    //   .close-icon {
+    //     display: none;
 
-        @media (@mobile) {
-          width: 24px;
-          color: #fff;
-          height: auto;
-          position: absolute;
-          display: unset;
-          right: 0;
-          margin-top: -4.5em;
-          margin-right: 3.5em;
-        }
-      }
-    }
+    //     @media (@mobile) {
+    //       width: 24px;
+    //       color: #fff;
+    //       height: auto;
+    //       position: absolute;
+    //       display: unset;
+    //       right: 0;
+    //       margin-top: -4.5em;
+    //       margin-right: 3.5em;
+    //     }
+    //   }
+    // }
 
     ul {
       @media (@mobile) {
         display: flex;
         flex-direction: column;
-        background: #eef8fb;
-        text-align: center;
-        padding-bottom: 10em;
-        padding-top: 3em;
+        align-items: center;
       }
       li {
         list-style: none;
@@ -79,8 +88,8 @@ header {
         margin-left: 5em;
 
         @media (@mobile) {
-          margin-top: 7em;
           margin-left: 0px;
+          margin-top: 5em;
         }
         a {
           font-size: 1.5rem;
