@@ -204,7 +204,7 @@ header {
   header .left-nav {
     position: relative;
     display: flex;
-    width: 100%;
+    width: 100vw;
     justify-content: space-between;
     align-items: center;
   }
@@ -235,9 +235,9 @@ header img {
 }
 @media (max-width: 500px) {
   header nav {
+    display: none;
     border-top: 0.2em solid rgba(23, 55, 66, 0.5);
     width: 100vw;
-    height: 100vh;
     margin-top: 1.5em;
     margin-bottom: 5em;
   }
