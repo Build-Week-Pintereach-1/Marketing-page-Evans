@@ -239,7 +239,7 @@ header img {
     border-top: 0.2em solid rgba(23, 55, 66, 0.5);
     width: 100vw;
     margin-top: 1.5em;
-    margin-bottom: 5em;
+    margin-bottom: 8em;
   }
 }
 @media (max-width: 500px) {
@@ -257,7 +257,7 @@ header nav ul li {
 @media (max-width: 500px) {
   header nav ul li {
     margin-left: 0px;
-    margin-top: 5em;
+    margin-top: 8em;
   }
 }
 header nav ul li a {
@@ -411,6 +411,7 @@ footer .copyright .footer-copy {
 @media (max-width: 500px) {
   .main-content .head-content {
     height: 400px;
+    padding-top: 15em;
   }
 }
 .main-content .head-content .header-text {
@@ -483,6 +484,11 @@ footer .copyright .footer-copy {
   display: flex;
   flex-direction: column;
   border-bottom: 0.06em solid rgba(23, 55, 66, 0.5);
+}
+@media (max-width: 500px) {
+  .main-content .features-con {
+    margin-top: 15em;
+  }
 }
 .main-content .features-con .sections {
   display: flex;
