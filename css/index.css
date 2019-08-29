@@ -197,6 +197,7 @@ header {
     overflow: hidden;
     background-color: #eef8fb;
     position: fixed;
+    top: 0;
     border-bottom: unset;
   }
 }
@@ -240,6 +241,7 @@ header img {
     width: 100vw;
     margin-top: 1.5em;
     margin-bottom: 8em;
+    z-index: 999;
   }
 }
 @media (max-width: 500px) {
