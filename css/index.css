@@ -190,12 +190,23 @@ header {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   border-bottom: 0.2em solid rgba(23, 55, 66, 0.5);
-  position: relative;
 }
 @media (max-width: 500px) {
   header {
-    flex-direction: row;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #eef8fb;
+    position: fixed;
+    border-bottom: unset;
+  }
+}
+@media (max-width: 500px) {
+  header .left-nav {
+    position: relative;
+    display: flex;
+    width: 100vw;
     justify-content: space-between;
+    align-items: center;
   }
 }
 header .ham {
@@ -225,12 +236,29 @@ header img {
 @media (max-width: 500px) {
   header nav {
     display: none;
+    border-top: 0.2em solid rgba(23, 55, 66, 0.5);
+    width: 100vw;
+    margin-top: 1.5em;
+    margin-bottom: 8em;
+  }
+}
+@media (max-width: 500px) {
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 header nav ul li {
   list-style: none;
   display: inline;
   margin-left: 5em;
+}
+@media (max-width: 500px) {
+  header nav ul li {
+    margin-left: 0px;
+    margin-top: 8em;
+  }
 }
 header nav ul li a {
   font-size: 1.5rem;
@@ -239,11 +267,6 @@ header nav ul li a {
   letter-spacing: 0.08em;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
-}
-@media (max-width: 500px) {
-  header nav ul li a {
-    color: white;
-  }
 }
 header nav ul li a:hover {
   color: #ff6347;
@@ -255,6 +278,11 @@ header nav ul .register a {
   color: #ffffff;
   border-radius: 0.3em;
   font-weight: 500;
+}
+@media (max-width: 500px) {
+  header nav ul .register a {
+    padding: 0.6em 5em;
+  }
 }
 header nav ul .register a:hover {
   color: #ffffff;
@@ -383,6 +411,7 @@ footer .copyright .footer-copy {
 @media (max-width: 500px) {
   .main-content .head-content {
     height: 400px;
+    padding-top: 15em;
   }
 }
 .main-content .head-content .header-text {
@@ -455,6 +484,11 @@ footer .copyright .footer-copy {
   display: flex;
   flex-direction: column;
   border-bottom: 0.06em solid rgba(23, 55, 66, 0.5);
+}
+@media (max-width: 500px) {
+  .main-content .features-con {
+    margin-top: 15em;
+  }
 }
 .main-content .features-con .sections {
   display: flex;

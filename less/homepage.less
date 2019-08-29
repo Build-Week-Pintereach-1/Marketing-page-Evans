@@ -10,10 +10,13 @@
     height: 700px;
     padding: 5em;
     padding-top: 0px;
+
     // background-image: url('/assets/rectangle.png');
 
     @media (@mobile) {
       height: 400px;
+
+      padding-top: 15em;
     }
 
     .header-text {
@@ -89,6 +92,9 @@
     display: flex;
     flex-direction: column;
     border-bottom: 0.06em solid rgba(23, 55, 66, 0.5);
+    @media (@mobile) {
+      margin-top: 15em;
+    }
 
     .sections {
       display: flex;

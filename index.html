@@ -18,20 +18,27 @@
 <body>
 
     <header>
-        <div>
-            <a href="index.html">
-                <img src="assets/pintereach-logo.png" alt="brand logo">
-            </a>
+        <div class="left-nav">
+            <div>
+                <a href="index.html">
+                    <img src="assets/pintereach-logo.png" alt="brand logo">
+                </a>
+            </div>
+
+            <!-- Hamburger Menu-->
+            <div class="ham">
+                <a href="javascript:void(0);" class="menu-icon" onclick="myFunction()" href="#">
+                    <img src="assets/menu2.svg" alt="menu icon" class="ham-icon">
+                </a>
+            </div>
         </div>
 
-        <!-- Hamburger Menu-->
-        <div class="ham">
-            <a href="javascript:void(0);" class="menu-icon" onclick="myFunction()" href="#">
-                <img src="assets/menu2.svg" alt="menu icon" class="ham-icon">
-            </a>
-        </div>
 
         <nav>
+            <!-- <a href="#">
+                <img src="assets/x.svg" alt="close icon" class="close-icon">
+            </a> -->
+
             <ul>
                 <li><a href="about.html" target="_blank" class="about">About</a></li>
                 <li><a href="#" class="login">Login</a></li>
@@ -46,14 +53,15 @@
             <div class="header-text">
                 <h1>Research Made Easy</h1>
 
-                <p>A user friendly way to do research. <br> Store all your articles in one place and get easy access to them
+                <p>A user friendly way to do research. <br> Store all your articles in one place and get easy access to
+                    them
                     anytime, anywhere.</p>
 
-                    <a href="./about.html" target="_blank">
-                        <button href="" target="_blank">Get Started</button>
-                    </a>
+                <a href="./about.html" target="_blank">
+                    <button href="" target="_blank">Get Started</button>
+                </a>
 
-                </div>
+            </div>
 
             <div class="hero">
                 <div class="hero-image">
@@ -108,12 +116,13 @@
         <div class="links">
             <div class="footer-logo-nav">
                 <div class="footer-logo-con">
-                    <a href="index.html"><img src="assets/pintereach-logo-footer.png" alt="brand logo" class="footer-logo"></a>
+                    <a href="index.html"><img src="assets/pintereach-logo-footer.png" alt="brand logo"
+                            class="footer-logo"></a>
                 </div>
                 <div class="footer-nav">
                     <ul>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html" target="_blank">About</a></li>
                         <li><a href="#">Terms</a></li>
                         <li><a href="#">Privacy</a></li>
                     </ul>
