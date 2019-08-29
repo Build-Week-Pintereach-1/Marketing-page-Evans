@@ -6,7 +6,7 @@ header {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   border-bottom: 0.2em solid rgba(23, 55, 66, 0.5);
-  position: relative;
+  // position: fixed;
 
   @media (@mobile) {
     flex-direction: row;
@@ -15,9 +15,10 @@ header {
 
   .ham {
     display: none;
+    position: relative;
 
     @media (@mobile) {
-display: unset;
+      display: unset;
     }
     .ham-icon {
       @media (@mobile) {
@@ -39,16 +40,48 @@ display: unset;
 
   nav {
     @media (@mobile) {
-      display: none;
+      // display: none;
+      position: absolute;
+      margin-top: 17.5em;
+      width: 100vw;
+      height: 100vh;
     }
+
+    a {
+      .close-icon {
+        display: none;
+
+        @media (@mobile) {
+          width: 24px;
+          color: #fff;
+          height: auto;
+          position: absolute;
+          display: unset;
+          right: 0;
+          margin-top: -4.5em;
+          margin-right: 3.5em;
+        }
+      }
+    }
+
     ul {
       @media (@mobile) {
-        
+        display: flex;
+        flex-direction: column;
+        background: #eef8fb;
+        text-align: center;
+        padding-bottom: 10em;
+        padding-top: 3em;
       }
       li {
         list-style: none;
         display: inline;
         margin-left: 5em;
+
+        @media (@mobile) {
+          margin-top: 7em;
+          margin-left: 0px;
+        }
         a {
           font-size: 1.5rem;
           color: rgb(40, 40, 40);
@@ -57,13 +90,8 @@ display: unset;
           font-weight: 600;
           font-family: "Montserrat", sans-serif;
 
-          @media (@mobile) {
-            color: white;
-          }
-
           &:hover {
             color: rgb(255, 99, 71);
-
           }
         }
       }
@@ -75,6 +103,10 @@ display: unset;
           color: rgb(255, 255, 255);
           border-radius: 0.3em;
           font-weight: 500;
+
+          @media (@mobile) {
+            padding: 0.6em 5em;
+          }
 
           &:hover {
             color: rgb(255, 255, 255);
